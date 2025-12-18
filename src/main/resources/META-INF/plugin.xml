@@ -13,6 +13,10 @@
   <depends>org.intellij.intelliLang</depends>
   <depends optional="true" config-file="kotlin-support.xml">org.jetbrains.kotlin</depends>
 
+  <extensions defaultExtensionNs="org.jetbrains.kotlin">
+    <supportsKotlinPluginMode supportsK2="true" />
+  </extensions>
+
   <extensions defaultExtensionNs="com.intellij">
 
     <inspectionToolProvider implementation="siosio.doma.inspection.dao.DaoInspectionToolProvider" />
